@@ -1,0 +1,24 @@
+# Node.js (server)
+server/node_modules/
+server/npm-debug.log
+server/yarn-error.log
+server/.env
+server/.env.local
+server/.env.development
+server/.env.test
+server/.env.production
+server/dist
+
+# Next.js (client)
+client/.next/
+client/out/
+client/coverage/
+client/.next-cache/
+client/node_modules/
+client/npm-debug.log
+client/yarn-error.log
+client/.env
+client/.env.local
+client/.env.development
+client/.env.test
+client/.env.production

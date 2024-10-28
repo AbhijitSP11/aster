@@ -1,0 +1,203 @@
+[
+  {
+    "userId": 1,
+    "email": "alice.jones@example.com",
+    "name": "Alice Jones",
+    "username": "AliceJones",
+    "profilePictureUrl": "p1.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 1,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 2,
+    "email": "bob.smith@example.com",
+    "name": "Bob Smith",
+    "username": "BobSmith",
+    "profilePictureUrl": "p2.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 2,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+
+  },
+  {
+    "userId": 3,
+    "email": "carol.white@example.com",
+    "name": "Carol White",
+    "username": "CarolWhite",
+    "profilePictureUrl": "p3.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 3,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 4,
+    "email": "dave.brown@example.com",
+    "name": "Dave Brown",
+    "username": "DaveBrown",
+    "profilePictureUrl": "p4.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 4,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 5,
+    "email": "eve.clark@example.com",
+    "name": "Eve Clark",
+    "username": "EveClark",
+    "profilePictureUrl": "p5.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 5,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 6,
+    "email": "frank.wright@example.com",
+    "name": "Frank Wright",
+    "username": "FrankWright",
+    "profilePictureUrl": "p6.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 1,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 7,
+    "email": "grace.hall@example.com",
+    "name": "Grace Hall",
+    "username": "GraceHall",
+    "profilePictureUrl": "p7.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 2,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 8,
+    "email": "henry.allen@example.com",
+    "name": "Henry Allen",
+    "username": "HenryAllen",
+    "profilePictureUrl": "p8.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 3,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 9,
+    "email": "ida.martin@example.com",
+    "name": "Ida Martin",
+    "username": "IdaMartin",
+    "profilePictureUrl": "p9.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 4,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 10,
+    "email": "john.doe@example.com",
+    "name": "John Doe",
+    "username": "JohnDoe",
+    "profilePictureUrl": "p10.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 5,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 11,
+    "email": "laura.adams@example.com",
+    "name": "Laura Adams",
+    "username": "LauraAdams",
+    "profilePictureUrl": "p11.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 1,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 12,
+    "email": "norman.bates@example.com",
+    "name": "Norman Bates",
+    "username": "NormanBates",
+    "profilePictureUrl": "p12.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 2,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 13,
+    "email": "olivia.pace@example.com",
+    "name": "Olivia Pace",
+    "username": "OliviaPace",
+    "profilePictureUrl": "p13.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 3,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 14,
+    "email": "peter.quill@example.com",
+    "name": "Peter Quill",
+    "username": "PeterQuill",
+    "profilePictureUrl": "p1.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 4,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 15,
+    "email": "quincy.adams@example.com",
+    "name": "Quincy Adams",
+    "username": "QuincyAdams",
+    "profilePictureUrl": "p2.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 5,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 16,
+    "email": "rachel.green@example.com",
+    "name": "Rachel Green",
+    "username": "RachelGreen",
+    "profilePictureUrl": "p3.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 1,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 17,
+    "email": "steve.jobs@example.com",
+    "name": "Steve Jobs",
+    "username": "SteveJobs",
+    "profilePictureUrl": "p4.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 2,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 18,
+    "email": "tina.fey@example.com",
+    "name": "Tina Fey",
+    "username": "TinaFey",
+    "profilePictureUrl": "p5.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 3,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 19,
+    "email": "ursula.monroe@example.com",
+    "name": "Ursula Monroe",
+    "username": "UrsulaMonroe",
+    "profilePictureUrl": "p6.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 4,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  },
+  {
+    "userId": 20,
+    "email": "victor.hugo@example.com",
+    "name": "Victor Hugo",
+    "username": "VictorHugo",
+    "profilePictureUrl": "p7.jpeg",
+    "emailVerified": "2024-01-01T00:00:00.000Z",
+    "teamId": 5,
+    "password": "$2b$10$ER8hPItHlyGpjiExnAlxbukf2xiAhUXyX8Fg924MsUXKx/NcQ7gde"
+  }
+]
