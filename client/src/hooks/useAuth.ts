@@ -17,10 +17,13 @@ export function useAuth(requireAuth = true) {
   });
 
   useEffect(() => {
-    if (requireAuth && status === "unauthenticated" && pathname !== "/" && pathname !== "/api/auth/signin") {
-      router.push('/api/auth/signin');
+    if (requireAuth && status === "authenticated") {
+      router.push('/dashboard'); // Redirect to the dashboard on successful login
+    } else if (requireAuth && status === "unauthenticated") {
+      router.push('/api/auth/signin'); // Redirect to the sign-in page if not authenticated
     }
-  }, [requireAuth, status, router, pathname]);
+  }, [requireAuth, status, router]);
+  
 
   return {
     session,
