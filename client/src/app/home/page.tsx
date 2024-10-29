@@ -125,69 +125,71 @@ const HomePage = () => {
         </header>
 
         {/* Board View Preview Section */}
+    
         <motion.section
-          className="container mx-auto px-4 py-24"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-white">Visual Task Management</h2>
-            <p className="text-gray-300">Drag and drop tasks between columns with ease</p>
-          </div>
+              className="container mx-auto px-4 py-12 md:py-24"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center mb-10 md:mb-16">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Visual Task Management</h2>
+                <p className="text-gray-300">Drag and drop tasks between columns with ease</p>
+              </div>
 
-          <div className="bg-gray-900/50 rounded-2xl p-8 border border-purple-500/20 backdrop-blur-xl">
-            <div className="grid grid-cols-4 gap-6">
-              {Object.entries(boardData).map(([column, tasks]) => (
-                <div key={column} className="bg-gray-900/50 rounded-xl p-4">
-                  <div className="flex items-center gap-2 mb-4">
-                    {column === 'todo' && <Clock className="w-5 h-5 text-blue-400" />}
-                    {column === 'inProgress' && <Terminal className="w-5 h-5 text-yellow-400" />}
-                    {column === 'review' && <AlertCircle className="w-5 h-5 text-purple-400" />}
-                    {column === 'completed' && <CheckCircle2 className="w-5 h-5 text-green-400" />}
-                    <h3 className="font-semibold text-white capitalize">
-                      {column.replace(/([A-Z])/g, ' $1').trim()}
-                    </h3>
-                    <span className="ml-auto bg-gray-800 px-2 py-1 rounded-full text-xs text-gray-400">
-                      {tasks.length}
-                    </span>
-                  </div>
+              <div className="bg-gray-900/50 rounded-2xl p-6 md:p-8 border border-purple-500/20 backdrop-blur-xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                  {Object.entries(boardData).map(([column, tasks]) => (
+                    <div key={column} className="bg-gray-900/50 rounded-xl p-4">
+                      <div className="flex items-center gap-2 mb-4">
+                        {column === 'todo' && <Clock className="w-5 h-5 text-blue-400" />}
+                        {column === 'inProgress' && <Terminal className="w-5 h-5 text-yellow-400" />}
+                        {column === 'review' && <AlertCircle className="w-5 h-5 text-purple-400" />}
+                        {column === 'completed' && <CheckCircle2 className="w-5 h-5 text-green-400" />}
+                        <h3 className="font-semibold text-white capitalize">
+                          {column.replace(/([A-Z])/g, ' $1').trim()}
+                        </h3>
+                        <span className="ml-auto bg-gray-800 px-2 py-1 rounded-full text-xs text-gray-400">
+                          {tasks.length}
+                        </span>
+                      </div>
 
-                  <div className="space-y-3">
-                    {tasks.map((task, index) => (
-                      <motion.div
-                        key={task.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="bg-gray-800 p-4 rounded-lg border border-gray-700/50 hover:border-purple-500/30 transition-all cursor-pointer group"
-                      >
-                        <div className="flex items-start justify-between mb-2">
-                          <h4 className="font-medium text-white">{task.title}</h4>
-                          <span className={`px-2 py-1 rounded-full text-xs ${
-                            task.priority === 'high' ? 'bg-red-500/20 text-red-400' :
-                            task.priority === 'medium' ? 'bg-yellow-500/20 text-yellow-400' :
-                            'bg-green-500/20 text-green-400'
-                          }`}>
-                            {task.priority}
-                          </span>
-                        </div>
-                        <div className="flex items-center justify-between text-sm text-gray-400">
-                          <span>{task.assignee}</span>
-                          <span>{task.dueDate}</span>
-                        </div>
-                        <motion.div
-                          className="absolute inset-0 border-2 border-purple-500/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
-                          layoutId={`task-border-${task.id}`}
-                        />
-                      </motion.div>
-                    ))}
-                  </div>
+                      <div className="space-y-3">
+                        {tasks.map((task, index) => (
+                          <motion.div
+                            key={task.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                            className="bg-gray-800 p-4 rounded-lg border border-gray-700/50 hover:border-purple-500/30 transition-all cursor-pointer group"
+                          >
+                            <div className="flex items-start justify-between mb-2">
+                              <h4 className="font-medium text-white text-sm md:text-base">{task.title}</h4>
+                              <span className={`px-2 py-1 rounded-full text-xs ${
+                                task.priority === 'high' ? 'bg-red-500/20 text-red-400' :
+                                task.priority === 'medium' ? 'bg-yellow-500/20 text-yellow-400' :
+                                'bg-green-500/20 text-green-400'
+                              }`}>
+                                {task.priority}
+                              </span>
+                            </div>
+                            <div className="flex items-center justify-between text-xs md:text-sm text-gray-400">
+                              <span>{task.assignee}</span>
+                              <span>{task.dueDate}</span>
+                            </div>
+                            <motion.div
+                              className="absolute inset-0 border-2 border-purple-500/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                              layoutId={`task-border-${task.id}`}
+                            />
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
+              </div>
+            </motion.section>
+
 
         {/* AI Assistant Section (Previous enhanced version remains the same) */}
         <AsterAIPreview />
